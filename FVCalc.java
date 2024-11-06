@@ -7,6 +7,6 @@ public class FVCalc {
 		double c = Double.parseDouble(args[2]);
 		double d =b/100;
 		double a1=a*(Math.pow(1+d,c));
-		System.out.println("after " + c + " years, $"+ a + " saved at " + b + "%" + " will yeld $" + (int)a1);
+		System.out.println("After " + c + " years, $"+ a + " saved at " + b + "%" + " will yield $" + (int)a1);
 	}
 }

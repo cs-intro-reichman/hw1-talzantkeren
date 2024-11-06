@@ -15,10 +15,10 @@ public class TimeFormat {
 		String ap ="1";
 		String min="1";
 		if(hours<12&&hours>0){
-			ap="am";
+			ap="AM";
 		}
 		else{
-			ap="pm";
+			ap="PM";
 		}
 		if(hours>=12)
 		{
@@ -26,7 +26,7 @@ public class TimeFormat {
 		}
 		if(hours==0){
 			hours=12;
-			ap="am";
+			ap="AM";
 		}
 
 		if(minutes<10){
