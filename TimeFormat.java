@@ -20,10 +20,11 @@ public class TimeFormat {
 		else{
 			ap="PM";
 		}
-		if(hours>=12)
+		if(hours>12)
 		{
 			hours=hours-12;
 		}
+		
 		if(hours==0){
 			hours=12;
 			ap="AM";
