@@ -15,17 +15,20 @@ public class TimeFormat {
 		String ap ="1";
 		String min="1";
 		String hou="";
+		int c=0;
 		if(hours<12&&hours>0){
 			ap="AM";
 			hou=hours+"";
 		}
-		else{
+		if(hours==12)
+		{
 			ap="PM";
 			hou=hours+"";
 		}
 		if(hours>12)
 		{
-			hou=hours-12+"";
+			c=hours-12;
+			hou=c+"";
 		}
 		
 		if(hours==0){
