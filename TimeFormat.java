@@ -14,19 +14,22 @@ public class TimeFormat {
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
 		String ap ="1";
 		String min="1";
+		String hou="";
 		if(hours<12&&hours>0){
 			ap="AM";
+			hou=hours+"";
 		}
 		else{
 			ap="PM";
+			hou=hours+"";
 		}
 		if(hours>12)
 		{
-			hours=hours-12;
+			hou=hours-12+"";
 		}
 		
 		if(hours==0){
-			hours=12;
+			hou="0";
 			ap="AM";
 		}
 
