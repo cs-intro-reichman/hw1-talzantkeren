@@ -27,8 +27,9 @@ public class TimeFormat {
 		}
 		if(hours>12)
 		{
-			c=hours-12;
-			hou=c+"";
+			hours=hours-12;
+			hou=hours+"";
+				ap="PM";
 		}
 		
 		if(hours==0){
